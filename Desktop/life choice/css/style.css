@@ -1,0 +1,325 @@
+/* Import Google Web fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+body {
+    /* sets the page defaults e.g. background and default typography */
+    background: #1b1818;
+    font-family: 'Noto Serif', serif;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #d6dcd6;
+}
+
+
+/* a few tweaks here and there */
+
+h2 {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+    /* resets the left margin in the figure*/
+}
+
+figure img {
+    max-width: 100%;
+    /* images will shrink to fit inside the main conent column*/
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+figcaption {
+    font-size: 14px;
+    color: #555;
+}
+
+blockquote {
+  width: 90%;
+  margin: 1em auto;
+  /* background: #ddd; */
+  padding: 1em;
+  font-size: 1.25em;
+  text-align: -webkit-left;
+  color: rgb(189, 174, 174);
+  font-style: italic;
+  /* border-bottom: 1px solid #999; */
+  /* border-top: 1px solid #999; */
+}
+
+
+/* Styling the full-page background headers */
+
+.image_bg, .color_bg {
+    height: 100vh;
+    /* this sets the height of each full width image section to that of the viewport.*/
+    position: relative;
+    /*display: flex;  */
+    background-position: center !important;
+}
+
+
+/* the text inside the headers */
+
+header {
+    font-family: initial;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 0 9px #000000;
+    width: 75%;
+    text-align: center;
+    /*   margin: auto;
+   */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 6vw;
+
+}
+
+header a {
+    color: white;
+}
+
+
+/* Styles for individual header sections by class name. */
+
+.title {
+    background: url(../images/cover-image.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* the background image doesn't move when scrolling*/
+}
+
+
+/* the above style gets copied for every new section header with background image. Each new copy has a new class name. */
+
+.past {
+  background: url(../images/Chap1-p1.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.present {
+  background: url(../images/Chap2-p3.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.reason {
+  background: url(../images/Chap3-p1.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.future {
+  background: url(../images/Chap4-p2.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.future p {
+  color: rgb(2, 21, 3);
+}
+
+.help {
+  background: url(../images/Chap4-p1.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.box{
+  background: rgba(128, 128, 128, 0.31);
+  padding: 2em;
+}
+
+.box p {
+  color:rgb(72, 93, 34);
+}
+
+.final h3{
+  text-align: center;
+}
+
+.final h4 {
+text-align: center;
+font-size: 1.4em;
+font-weight:400;
+}
+
+.sources{
+  text-align: center;
+  font-size: 1.4em;
+  font-weight:400;
+
+}
+
+.green_header {
+    /* this sets the background colour of the coloured header. */
+    background: #d05858;
+}
+
+
+/* Content sections */
+
+.headings {
+  width: 30%;
+  margin-left: 55%;
+  padding-top: 10em;
+}
+
+.headings p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+
+}
+
+.leftpart {
+  width: 30%;
+  margin-right: : 55%;
+  padding-top: 10em;
+}
+
+.leftpart p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.chapter {
+  /*margin-left: 65%;
+  margin-top: 8%;*/
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 3em;
+  font-weight: 200;
+  display: block;
+  margin-top: 0;
+  padding-top: 2em;
+  /*position: absolute;*/
+}
+
+.subtitle {
+font-family: "Times New Roman", Georgia, Serif;
+/*margin-left: 60%;
+margin-top: 13%;*/
+font-size: 2.5em;
+font-weight: 200;
+display: block;
+padding-bottom: 1em;
+border-bottom: 1px solid;
+/*position: absolute;*/
+}
+
+.quotes {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 1.4em;
+  font-weight: 200;
+  display: block;
+  padding-top: 1em;
+  font-style: italic;
+  display: block;
+
+  /*position: relative;*/
+}
+
+
+
+.explanation {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 1em;
+  font-weight: 200;
+  display: block;
+  padding-top: 1.2em;
+  font-style: italic;
+  display: block;
+}
+
+.smalltitle {
+  font-size: 1.4em;
+  font-weight:400;
+  color:rgb(214, 220, 214);
+}
+
+.points {
+  width: 90%;
+  /* background: #ddd; */
+  margin-left: 1em;
+}
+.points p{
+  text-align: -webkit-left;
+  color: rgb(189, 174, 174);
+  font-style: italic;
+}
+
+
+.left-align {
+  width: 40%;
+  margin: 1em 0 1em 3em;
+  padding-bottom: 4em;
+}
+
+.right-align {
+  margin: 3em 3em 3em 50%;
+  padding-bottom: 4em;
+}
+
+.centered {
+margin-top: 3em;
+
+}
+
+.centered p {
+  padding-top: 1em;
+}
+
+.centered p span {
+  font-style: italic;
+}
+.spacer {
+  margin-top: 9em;
+}
+
+.black {
+  background-color: black;
+}
+.content {
+    margin: 0 auto;
+    padding: 1em 20%;
+    /* this in-effect sets the content section's width e.g. 20% = 60% width. */
+}
+
+.content one {
+  width: 45%;
+  margin-left: 50%;
+  padding-top: 10em;
+}
+
+.content one p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.content two {
+  width: 45%;
+  margin-right: 50%;
+  padding-top: 10em;
+
+}
+
+footer {
+    height: 100px;
+    background: #000;
+    color: #eee;
+    text-align: center;
+    padding: 1em;
+}
